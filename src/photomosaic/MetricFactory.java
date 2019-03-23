@@ -57,6 +57,6 @@ class MetricFactory {
 		}
 	}
 
-	public static final String AVAILABLE_LIST = "IntensityMetric QuadIntensityMetric RGBMetric";
+	public static final String AVAILABLE_LIST = "IntensityMetric QuadIntensityMetric RGBMetric QuadRGBMetric";
 
 }
