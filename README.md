@@ -143,3 +143,27 @@ See save as popup window
 Saved at C:\xxx\mosaic.png
 ```
 
+First, the user selects the metric that will be used to compare pictures. Here, QuadRGBMetric is selected, which is generally the best for color photos.   
+
+Second, the user loads pictures into the database with a file-selection window. The program reads in all the small pictures the user selects, resizes them, and adds them to the database. It then displays the database in a new window.     
+
+Third, the user specifies a picture to render through another file-selection window. This picture is displayed in a new window after loading it.    
+
+Finally, the user renders the picture as a photomosaic, specifying the width/height of the small pictures and the amount of reuse allowed.    
+
+Possible Commands (Help)   
+------------------------
+```
+? - Gives you the list of Comparators, Filters, and Metrics that can be used for sorting, filtering, and comparing the database of pictures.   
+r - Resets the mini picture database.   
+l - Loads more mini pictures into the database through a file selector popup window. The width/height inputted must be equal to the width/heights of the pictures already in the database.   
+d - Displays the mini picture database in a new window.   
+s - This method scans the database of pictures: for each picture that is OK by the first parameter, a copy is made and filtered by the second parameter, and added to the database. Displays the new database of pictures.   
+< - Sorts the picture database according to a Comparator passed in, and displays the newly sorted database of pictures.   
+f - Does not modify the database of pictures, but this filter will be applied to all subsequent files that are loaded.   
+m - Applies the metric to each picture in the database of pictures, and applies the metric to all subsequent files that are loaded. This is the metric that will be used to render the picture.    
+L - Loads the picture to render through a file selector popup window.   
+S - Scales the picture to render given a width and a height.   
+R - Renders the picture and displays the rendering.   
+q - Quits the application.   
+```
